@@ -1,48 +1,49 @@
 html {
-    box-sizing: border-box;
-  }
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-  
-  .cf:before,
-  .cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-  }
-  
-  .cf:after {
-    clear: both;
-  }
-  
-  main{
-    max-width:960px;
-    border:1px solid #000;
-    margin:20px auto;
-   /* background-image: url("https://assets.codepen.io/7248/grid-1.png");*/
-  }
-  
-  header.primary, #colophon{
-     background: rgba(0, 0, 0, 0.4);
-     width: 95.83%;
-     margin: 2.0833%;
-     padding:20px;
-     float: left;
-  }
-  
-  #blog{
-    background: rgba(0, 0, 0, 0.6); 
-    width: 66.4583%;
-    margin-left: 2.0833%;
-    float:left;
-  }
-  
-  aside{
-    background: rgba(0, 0, 0, 0.3);
-    width: 27.2916%;
-    margin-left: 2.0833%;
-    float:left;
-    
-  }
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+main {
+  width:960px;
+  display:grid;
+  grid-template-columns: repeat(10, [col-] 1fr);
+  grid-template-rows: auto;
+  margin:auto;
+  gap:20px;
+  border:1px solid #000;
+  margin:20px;
+}
+
+header {
+   background: rgba(0, 0, 0, 0.4);
+   grid-column: 1 / 11;
+   grid-row: 1 / 2;
+   display:grid;
+   grid-template-columns: subgrid;
+   grid-template-rows: subgrid;
+}
+
+#experience {
+  background: rgba(0, 0, 0, 0.6);
+  grid-column: 1 / 11;
+  grid-row: 2 / 3;
+}
+
+#education {
+ 
+}
+
