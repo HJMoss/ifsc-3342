@@ -1,49 +1,53 @@
 html {
-  box-sizing: border-box;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-.cf:before,
-.cf:after {
-  content: " "; /* 1 */
-  display: table; /* 2 */
-}
-
-.cf:after {
-  clear: both;
-}
-
-main {
-  width:960px;
-  display:grid;
-  grid-template-columns: repeat(10, [col-] 1fr);
-  grid-template-rows: auto;
-  margin:auto;
-  gap:20px;
-  border:1px solid #000;
-  margin:20px;
-}
-
-header {
-   background: rgba(0, 0, 0, 0.4);
-   grid-column: 1 / 11;
-   grid-row: 1 / 2;
-   display:grid;
-   grid-template-columns: subgrid;
-   grid-template-rows: subgrid;
-}
-
-#experience {
-  background: rgba(0, 0, 0, 0.6);
-  grid-column: 1 / 11;
-  grid-row: 2 / 3;
-}
-
-#education {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  .cf:before,
+  .cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+  }
+  
+  .cf:after {
+    clear: both;
+  }
  
-}
+  main{
+    width:80vw;
+    display:grid;
+    grid-template-columns: repeat(10, [col-] 1fr);
+    grid-template-rows:auto;
+    margin:auto;
+    gap:20px;
+    border:1px solid #000;
+    padding:20px;
+  }
 
+  header.primary{
+    grid-column: 1 / 11;
+    grid-row: 1 / 2;
+  }
+
+  #content{
+    grid-column: 1 / 11;
+    grid-row: 2 /3;
+    display:grid;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+  }
+
+  footer.primary{
+    background: rgba(0, 0, 0, 0.4);
+    grid-column: 1 / 11;
+    grid-row: 3 / 4;
+  }
+
+  #blog{
+    background: rgba(0, 0, 0, 0.3);
+    grid-columns:8 / 11;
+  }
