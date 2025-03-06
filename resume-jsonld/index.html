@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Harrison Moss">
+  <link rel="stylesheet" href="../resume-jsonld/css/style.css">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -12,8 +13,8 @@
   "name": "First Last",
   "givenName": "Harrison",
   "familyName": "Moss",
-  "image": "https://placehold.co/600x600?text=Headshot",
-  "description": "I am a professional musician aquiring my degree in Web Design and Development.",
+  "image": "../resume-jsonld/img/IMG_9004.jpg",
+  "description": "I am a professional musician acquiring my degree in Web Design and Development.",
   "birthDate": "2005-03-24",
   "nationality": "United States",
   "homeLocation": {
@@ -96,12 +97,12 @@
 </header>
 <!-- Main -->
 <main class="container">
-  <h1 class="page-title">Full Name</h1>
+  <h1 class="page-title">Harrison Moss</h1>
   <section id="about">
-    <h2>Personal Details</h2>
+    <h2 class="visuallyhidden">Personal Details</h2>
     <div class="bio">
-    <img src="https://placehold.co/600x600?text=Headshot" alt="Your Name">
-    <p>I am a professional musician aquiring my degree in Web Design and Development.</p>
+    <img src="../resume-jsonld/img/IMG_9004.jpg" alt="Harrison Moss">
+    <p>I am a professional musician acquiring my degree in Web Design and Development.</p>
     </div>  
     <dl class="details">
       <dt>Name</dt>
@@ -136,7 +137,7 @@
   </section>
   <section id="skills">
     <h2>Skills</h2>
-    <ul>
+    <ul id="skills">
       <li class="skill">HTML</li>
       <li class="skill">Css</li>
       <li class="skill">Adobe Suite</li>
@@ -144,7 +145,7 @@
     </ul>
   </section>
   <section id="experience">
-    <h2>Experience</h2>
+    <h2>Experience:</h2>
     <article class="job">
       <h3>Jazz Bassist</h3>
       <div>
