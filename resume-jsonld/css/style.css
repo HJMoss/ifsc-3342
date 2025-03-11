@@ -286,7 +286,7 @@ img {
 }
 
 .container {
-  max-width: 420px;
+  max-width:;
   margin: 0 auto;
 }
 
@@ -465,6 +465,17 @@ dd {
   list-style-type: none;
 }
 
+#left {
+  background-color:#00207e;
+  border-radius: 20px;
+  color:#ffffff;
+  padding: 20px;
+}
+
+.job a {
+  color: #fff;
+}
+
 .job div span {
   display: block;
 }
@@ -472,7 +483,7 @@ dd {
 .job,
 .certificate {
   border-bottom: 1px solid #000926;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .job *[itemprop="jobTitle"],
@@ -491,4 +502,45 @@ footer {
   color: #fff;
   text-align: center;
   text-decoration: none;
+}
+
+#copyright a {
+  color: #fff;
+}
+
+main.container{
+  display:grid;
+  grid-template-areas:
+    "title"
+    "about"
+    "skills"
+    "education"
+    "experience"
+    ;
+}
+
+@media screen and (min-width:750px){
+  header.container{
+    max-width:900px;
+    }
+    main.container{
+    max-width:900px;
+    }
+    #page {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    
+    #right {
+      grid-column: 1;
+    }
+    
+    #left {
+      grid-column: 2;
+    }
+
+    main h1 {
+      padding-bottom: 50px;
+    }
 }
