@@ -286,7 +286,7 @@ img {
 }
 
 .container {
-  max-width:;
+  max-width: 1440;
   margin: 0 auto;
 }
 
@@ -350,11 +350,10 @@ nav a:hover {
   #abt {
     border-radius: 10px 10px 0 0;
   }
-  
+
   #ed {
     border-radius: 0 0 10px 10px;
   }
-  
 }
 
 main {
@@ -466,9 +465,9 @@ dd {
 }
 
 #left {
-  background-color:#00207e;
+  background-color: #00207e;
   border-radius: 20px;
-  color:#ffffff;
+  color: #ffffff;
   padding: 20px;
 }
 
@@ -508,39 +507,63 @@ footer {
   color: #fff;
 }
 
-main.container{
-  display:grid;
+main.container {
+  display: grid;
   grid-template-areas:
     "title"
     "about"
     "skills"
     "education"
-    "experience"
-    ;
+    "experience";
 }
 
-@media screen and (min-width:750px){
-  header.container{
-    max-width:900px;
-    }
-    main.container{
-    max-width:900px;
-    }
-    #page {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
-    
-    #right {
-      grid-column: 1;
-    }
-    
-    #left {
-      grid-column: 2;
-    }
+@media screen and (min-width: 750px) {
+  header.container {
+    max-width: 900px;
+  }
+  main.container {
+    max-width: 900px;
+  }
+  #page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
 
-    main h1 {
-      padding-bottom: 50px;
-    }
+  #right {
+    grid-column: 1;
+  }
+
+  #left {
+    grid-column: 2;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  #experience {
+    padding-top: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  header.container {
+    max-width: 1440px;
+  }
+  main.container {
+    max-width: 1440px;
+  }
+  #page {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+  }
+
+  #right {
+  }
+
+  #left {
+
+    grid-area: 1 / 2;
+  }
 }
