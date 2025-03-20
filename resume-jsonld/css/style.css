@@ -441,9 +441,6 @@ dd {
   background: #000926;
 }
 
-#skills {
-}
-
 #skills h2 {
   text-align: center;
   border-bottom: 2px solid #000926;
@@ -524,7 +521,7 @@ main.container {
   main.container {
     max-width: 900px;
   }
-  #page {
+  #about {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -536,6 +533,16 @@ main.container {
 
   #left {
     grid-column: 2;
+  }
+
+  #about p {
+    align-content: center;
+    line-height: 2rem;
+  }
+
+  .related-links {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -552,18 +559,30 @@ main.container {
   main.container {
     max-width: 1440px;
   }
-  #page {
+  #about {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     gap: 20px;
   }
 
-  #right {
+  .related-links {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    font-size: 2rem;
+    gap: 12rem;
   }
 
   #left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
 
-    grid-area: 1 / 2;
+  #skills {
+    grid-column: 1 / -1;
+  }
+
+  #experience {
+    padding: 0;
   }
 }
