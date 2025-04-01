@@ -306,7 +306,7 @@ nav ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 0px 0px 0px 0px;
-  font-size: large;
+  font-size: 1.75rem;
 }
 
 nav li {
