@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: url('../img/48605e_7a93cbeddf704f7f803b63ee2f399b8d~mv2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+ .text-primary {
+  text-align: center;
+  padding: 7rem;
+  color: yellow !important;
+}
+
+.text-secondary {
+  text-align: center;
+  padding: 7rem;
+  color: rgb(255, 255, 255) !important;
+}
