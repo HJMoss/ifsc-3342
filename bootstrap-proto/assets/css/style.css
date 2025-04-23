@@ -7,7 +7,7 @@ body {
   background-attachment: fixed;
 }
 
- .text-primary {
+.text-primary {
   text-align: center;
   padding: 7rem;
   color: yellow !important;
@@ -17,4 +17,37 @@ body {
   text-align: center;
   padding: 7rem;
   color: rgb(255, 255, 255) !important;
+}
+
+
+.mid {
+  background-color: #F5ED28; /* bright yellow */
+  padding: 3rem 1rem;
+}
+
+/* Optional: Style the table inside */
+.mid .table {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: Make image and table stack nicely on smaller screens */
+@media (max-width: 768px) {
+  .mid .row {
+    flex-direction: column;
+  }
+
+  .mid .col {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.navbar .img-thumbnail {
+  max-height: 50px;
+  width: auto;
+  padding: 0;
+  border: none;
+  background: none;
 }
