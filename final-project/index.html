@@ -1,190 +1,256 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Grant County Library</title>
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="">
-  <meta name="author" content="Harrison Moss"> 
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Grant County Library</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="description" content="" />
+    <meta name="author" content="Harrison Moss" />
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icon.png" />
 
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
-</head>
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#fafafa" />
+    <script>
+      let d = new Date();
+      alert("Today's date is " + d);
+    </script>
+    <script>
+      function myMap() {
+        var mapProp = {
+          center: new google.maps.LatLng(51.508742, -0.12085),
+          zoom: 5,
+        };
+        var map = new google.maps.Map(
+          document.getElementById("googleMap"),
+          mapProp
+        );
+      }
+    </script>
 
-<body>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+  </head>
+  <script></script>
+  <body>
+    <nav>
+      <a href="#" class="logo">
+        <img
+          src="img/Grant_Co_Logo-01-removebg-preview.png"
+          alt="inside library"
+        />
+        <span>Grant County Library</span>
+      </a>
 
- 
-  <nav>
-    <a href="#" class="logo">
-      <img src="img/Grant_Co_Logo-01-removebg-preview.png" alt="inside library">
-      <span>Grant County Library</span>
-    </a>
-  
-    <input type="checkbox" id="menu-toggle" />
-    <label class="menu-icon" for="menu-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
-  
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact Us</a></li>
-      <li><a href="#resources">Resources</a></li>
-      <li><a href="#catalog">Catalog/Login</a></li>
-    </ul>
-  </nav>
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-icon" for="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
 
-  <section id="banner">                     
-    <h3 class="text-primary">Welcome to Your</h3>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="https://grantcountylibrary.bibliocommons.com" target="_blank">Catalog/Login</a></li>
+      </ul>
+    </nav>
+
+    <section id="banner">
+      <h3 class="text-primary">Welcome to Your</h3>
       <h2 class="text-secondary">Grant County Library</h2>
-    <h3 class="text-primary">Discover, Dream, Thrive</h3>
-  </section>
-
-
-<section id="facehour">
-  <section id="facebook">
-    <h1>Facebook API call placeholder</h1>
-  </section>
-  <section id="hours">
-    <h2>Hours of Operation</h2>
-    <ul>
-      <li>Monday: 9:00 AM – 7:30 PM</li>
-      <li>Tuesday: 9:00 AM – 4:30 PM</li>
-      <li>Wednesday: 9:00 AM – 4:30 PM</li>
-      <li>Thursday: Closed</li>
-      <li>Friday: 9:00 AM – 4:30 PM</li>
-      <li>Saturday: 10:00 AM – 2:00 PM</li>
-      <li>Sunday: Closed</li>
-    </ul>
-  </section>
-</section>
-
-
-<section id="about">
-  <section id="history">
-  <h2>About the Grant County Library</h2>
-    <h3>Our History</h3>
-    <p>
-      Established in April 1935 by a group of dedicated women concerned about the lack of books in Arkansas, the Grant County Library began in the Legion Hut. Mrs. Clarice Johnson Pollard served as the first librarian. Today, the library resides at 210 North Oak Street in Sheridan and is a proud member of the Mid-Ark Regional Library System.
-    </p>
-
-    <h3>Our Mission</h3>
-    <p>
-      Our mission is to provide quality materials and services that fulfill the educational, informational, cultural, and recreational needs of the community in a welcoming, respectful, and professional atmosphere, encouraging all to discover, dream, and thrive.
-    </p>
+      <h3 class="text-primary">Discover, Dream, Thrive</h3>
     </section>
 
-    <section id="team">
-      <h3>Our Team</h3>
-      <ul class="team-lead">
-        <li><img src="img/jessica.avif" alt="picture of Jessica Reeves"><strong> Jessica Reeves </strong>| Director</li>
-      </ul>
-      <ul class="team-members">
-        <li><img src="img/aunt.avif" alt="picture of Alicia Clement"><strong>Alicia Clement</strong>Services and Technology</li>
-        <li><img src="img/amanda.avif" alt="picture of Amanda Yancey"><strong>Amanda Yancey</strong>Programming & Circulation</li>
-        <li><img src="img/nicole.avif" alt="picture of Nicole Atchley"><strong>Nicole Atchley</strong>Circulation</li>
-        <li><img src="img/shannon.avif" alt="picture of Shannon Hollomon"><strong>Shannon Hollomon</strong>Circulation (Part-time)</li>
-        <li><img src="img/calley.avif" alt="picture of Calley Bradford"><strong>Calley Bradford</strong>Circulation (Part-time)</li>
+    <section id="facehour">
+      <section id="facebook">
+        <h1>Facebook API call placeholder</h1>
+      </section>
+      <section id="hours">
+        <h2>Hours of Operation</h2>
+        <ul>
+          <li>Monday: 9:00 AM – 7:30 PM</li>
+          <li>Tuesday: 9:00 AM – 4:30 PM</li>
+          <li>Wednesday: 9:00 AM – 4:30 PM</li>
+          <li>Thursday: Closed</li>
+          <li>Friday: 9:00 AM – 4:30 PM</li>
+          <li>Saturday: 10:00 AM – 2:00 PM</li>
+          <li>Sunday: Closed</li>
+        </ul>
+      </section>
+    </section>
+
+    <section id="about">
+      <section id="history">
+        <h2>About the Grant County Library</h2>
+        <h3>Our History</h3>
+        <p>
+          Established in April 1935 by a group of dedicated women concerned
+          about the lack of books in Arkansas, the Grant County Library began in
+          the Legion Hut. Mrs. Clarice Johnson Pollard served as the first
+          librarian. Today, the library resides at 210 North Oak Street in
+          Sheridan and is a proud member of the Mid-Ark Regional Library System.
+        </p>
+
+        <h3>Our Mission</h3>
+        <p>
+          Our mission is to provide quality materials and services that fulfill
+          the educational, informational, cultural, and recreational needs of
+          the community in a welcoming, respectful, and professional atmosphere,
+          encouraging all to discover, dream, and thrive.
+        </p>
+      </section>
+
+      <section id="team">
+        <h3>Our Team</h3>
+        <ul class="team-lead">
+          <li>
+            <img
+              src="img/jessica.avif"
+              alt="picture of Jessica Reeves"
+            /><strong> Jessica Reeves </strong>| Director
+          </li>
+        </ul>
+        <ul class="team-members">
+          <li>
+            <img src="img/aunt.avif" alt="picture of Alicia Clement" /><strong
+              >Alicia Clement</strong
+            >Services and Technology
+          </li>
+          <li>
+            <img src="img/amanda.avif" alt="picture of Amanda Yancey" /><strong
+              >Amanda Yancey</strong
+            >Programming & Circulation
+          </li>
+          <li>
+            <img src="img/nicole.avif" alt="picture of Nicole Atchley" /><strong
+              >Nicole Atchley</strong
+            >Circulation
+          </li>
+          <li>
+            <img
+              src="img/shannon.avif"
+              alt="picture of Shannon Hollomon"
+            /><strong>Shannon Hollomon</strong>Circulation (Part-time)
+          </li>
+          <li>
+            <img
+              src="img/calley.avif"
+              alt="picture of Calley Bradford"
+            /><strong>Calley Bradford</strong>Circulation (Part-time)
+          </li>
+        </ul>
+      </section>
+
+      <section id="board">
+        <h3>Library Board of Trustees</h3>
+        <p>
+          Established in 1978, the Board of Trustees serves as the governing
+          body of the Grant County Library. Trustees are appointed by the County
+          Judge and confirmed by the Quorum Court upon recommendation of the
+          current Board and Library Director.
+        </p>
+        <ul class="board-chair">
+          <li><strong>Carolyn Ashcraft</strong><br /><i>Secretary</i></li>
+        </ul>
+        <ul class="board-members">
+          <li><strong>Karla Koon</strong></li>
+          <li><strong>Haven Crutchfield Thornburg</strong></li>
+          <li><strong>Eddie Hicks</strong></li>
+          <li><strong>David Robinson</strong></li>
+        </ul>
+      </section>
+      <section id="friends">
+        <h3>Friends of the Library</h3>
+        <p>
+          Founded in 2019, the Friends of the Grant County Library is a
+          non-profit organization comprising volunteers, businesses, and
+          organizations dedicated to supporting the library. Interested
+          individuals can request a membership form at the circulation desk.
+        </p>
+
+        <h3>Mid-Ark Regional Library System</h3>
+        <p>
+          The Grant County Library is part of the Mid-Ark Regional Library
+          System, which includes libraries in Cleveland, Dallas, Grant, Hot
+          Spring, and Saline counties. Patrons can borrow materials from any of
+          the five county libraries and the Bookmobile that makes regular stops
+          throughout the region.
+        </p>
+      </section>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <h3>
+        The Grant County Library offers a variety of services to the community:
+      </h3>
+
+      <section class="service-grid">
+        <ul>
+          <li>Books, eBooks, and Audiobooks</li>
+          <li>Internet access and computer use</li>
+          <li>Printing and faxing services</li>
+          <li>Programs for all ages</li>
+        </ul>
+
+        <p>
+          We also offer <strong>Curbside Service</strong> for your convenience.
+          Simply call <strong>870-942-4436</strong> to arrange a pickup.
+          <br />Additionally, free Wi-Fi is available 24/7 in the library
+          parking lot. Connect to the network named
+          <strong>Grant County Library Guest</strong> and use the password:
+          <strong>gcl210oak!</strong>.
+        </p>
+      </section>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us!</h2>
+      <section id="info">
+        <p>📍 210 N. Oak Street, Sheridan, AR 72150</p>
+        <p>📞 Phone: 870-942-4436</p>
+        <p>📠 Fax: 870-942-7500</p>
+        <p>
+          ✉️ Email:
+          <a href="mailto:info@grantcountylibrary.org"
+            >info@grantcountylibrary.org</a
+          >
+        </p>
+      </section>
+      <section id="googleMap">Google Maps API Call Placeholder</section>
+    </section>
+
+    <section id="resources">
+      <h2>Resources</h2>
+      <ul>
+        <li>
+          <a href="https://grantcountylibrary.bibliocommons.com" target="_blank">Online Catalog</a>
+        </li>
+        <li>
+          <a href="https://www.library.arkansas.gov" target="_blank">Traveler Database</a>
+        </li>
       </ul>
     </section>
-    
 
-    <section id="board">
-      <h3>Library Board of Trustees</h3>
+    <footer>
       <p>
-        Established in 1978, the Board of Trustees serves as the governing body of the Grant County Library.
-        Trustees are appointed by the County Judge and confirmed by the Quorum Court upon recommendation
-        of the current Board and Library Director.
+        &copy; 2025 Grant County Library | Part of the Mid-Ark Regional Library
+        System | (NOT REAL/PROJECT CONCEPT FOR A COLLEGE COURSE)
       </p>
-      <ul class="board-chair">
-        <li><strong>Carolyn Ashcraft</strong><br><i>Secretary</i></li>
-      </ul>
-      <ul class="board-members">
-        <li><strong>Karla Koon</strong></li>
-        <li><strong>Haven Crutchfield Thornburg</strong></li>
-        <li><strong>Eddie Hicks</strong></li>
-        <li><strong>David Robinson</strong></li>
-      </ul>
-    </section>
-    <section id="friends">
-      <h3>Friends of the Library</h3>
-      <p>
-        Founded in 2019, the Friends of the Grant County Library is a non-profit organization comprising volunteers, businesses, and organizations dedicated to supporting the library. Interested individuals can request a membership form at the circulation desk.
-      </p>
-    
-      <h3>Mid-Ark Regional Library System</h3>
-      <p>
-        The Grant County Library is part of the Mid-Ark Regional Library System, which includes libraries in Cleveland, Dallas, Grant, Hot Spring, and Saline counties. Patrons can borrow materials from any of the five county libraries and the Bookmobile that makes regular stops throughout the region.
-      </p>
-    </section>    
-</section>
+    </footer>
 
-
-<section id="services">
-  <h2>Our Services</h2>
-  <h3>
-    The Grant County Library offers a variety of services to the community:
-  </h3>
-  
-  <section class="service-grid">
-  <ul>
-    <li>Books, eBooks, and Audiobooks</li>
-    <li>Internet access and computer use</li>
-    <li>Printing and faxing services</li>
-    <li>Programs for all ages</li>
-  </ul>
-
-  <p>
-    We also offer <strong>Curbside Service</strong> for your convenience. Simply call <strong>870-942-4436</strong> to arrange a pickup.
-    <br>Additionally, free Wi-Fi is available 24/7 in the library parking lot. 
-    Connect to the network named <strong>Grant County Library Guest</strong> and use the password: <strong>gcl210oak!</strong>.
-  </p>
-  </section>
-</section>
-
-
-
-
-<section id="contact">
-  <h2>Contact Us!</h2>
-  <section id="info">
-  <p>📍 210 N. Oak Street, Sheridan, AR 72150</p>
-  <p>📞 Phone: 870-942-4436</p>
-  <p>📠 Fax: 870-942-7500</p>
-  <p>✉️ Email: <a href="mailto:info@grantcountylibrary.org">info@grantcountylibrary.org</a></p>
-  </section>
-  <section id="map">Google Maps API Call Placeholder</section>
-</section>
-
-
-<section id="resources">
-  <h2>Resources</h2>
-  <ul>
-    <li><a href="https://grantcountylibrary.bibliocommons.com" target="_blank">Online Catalog</a></li>
-    <li><a href="https://www.library.arkansas.gov" target="_blank">Traveler Database</a></li>
-  </ul>
-</section>
-
-
-<footer>
-  <p>&copy; 2025 Grant County Library | Part of the Mid-Ark Regional Library System | (NOT REAL/PROJECT CONCEPT FOR A COLLEGE COURSE)</p>
-</footer>
-
-  <p></p>
-  <script src="js/app.js"></script>
-
-</body>
-
+    <p></p>
+    <script src="js/app.js"></script>
+  </body>
 </html>

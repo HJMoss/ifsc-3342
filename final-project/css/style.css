@@ -255,7 +255,7 @@ textarea {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Futura', 'Trebuchet MS', 'Segoe UI', sans-serif;
   background-color: #fff;
   color: #333;
 }
@@ -483,6 +483,22 @@ nav ul li a:hover {
   text-align: center;
 }
 
+@media screen and (max-width: 773px) {
+  #facehour {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  #hours {
+    grid-column: auto;
+    order: -1;
+  }
+
+  #facebook {
+    grid-column: auto;
+    order: 0;
+  }
+}
 
 
 
@@ -503,6 +519,12 @@ nav ul li a:hover {
   font-size: 3rem;
   margin: 2rem;
   text-decoration: underline;
+}
+
+@media (max-width: 750px) {
+  #about {
+    padding: 1rem;
+  }
 }
 
 #history, #friends {
@@ -713,10 +735,18 @@ nav ul li a:hover {
   }
 }
 
+
 #services {
   background: linear-gradient(to bottom, #fff, #F5ED28);
   padding: 5rem;
   text-align: center;
+
+}
+
+@media (max-width: 750px) {
+  #services {
+    padding: 1rem;
+  }
 }
 
 #services h2 {
@@ -736,12 +766,18 @@ nav ul li a:hover {
   transform: scale(1.05);
 }
 
+#services h3{
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
 .service-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   align-items: start;
   text-align: left;
+  font-size: 1rem;
 }
 
 .service-grid ul {
@@ -750,6 +786,8 @@ nav ul li a:hover {
   margin: 0;
   font-size: 1.1rem;
   color: #333;
+  justify-self: center;
+  align-self: center;
 }
 
 .service-grid li {
@@ -757,6 +795,7 @@ nav ul li a:hover {
   padding-left: 1.5rem;
   margin-bottom: 1rem;
   line-height: 1.6;
+  border-bottom: 2px solid #4859A9;
 }
 
 .service-grid li::before {
@@ -773,8 +812,10 @@ nav ul li a:hover {
   font-weight: 600;
   color: #333;
   padding: 1rem;
+  justify-self: center;
+  align-self: center;
+  border-bottom: 2px solid #4859A9;
 }
-
 
 @media (max-width: 768px) {
   .service-grid {
@@ -791,6 +832,12 @@ nav ul li a:hover {
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   align-items: flex-start;
+}
+
+@media (max-width: 750px) {
+  #contact {
+    padding: 1rem;
+  }
 }
 
 #contact h2 {
@@ -822,6 +869,13 @@ nav ul li a:hover {
   border-left: 10px solid #4859A9;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+#info p:hover {
+  transform: translateY(-5px);
+  transform: translateX(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 #info a {
@@ -861,7 +915,67 @@ nav ul li a:hover {
 
 #resources {
   background: linear-gradient(to bottom, #4859A9, #4859A9, #fff);
+  padding: 5rem;
+  text-align: center;
 }
+
+@media (max-width: 750px) {
+  #resources {
+    padding: 1rem;
+  }
+}
+
+#resources h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  color: #333;
+  border-bottom: 3px solid #F5ED28;
+  padding-bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+#resources h2:hover {
+  color: #F5ED28;
+  transform: scale(1.05);
+}
+
+#resources ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 2rem;
+  list-style: none;
+}
+
+#resources li {
+  padding: 0;
+}
+
+#resources a {
+  display: block;
+  text-decoration: none;
+  border: 2px solid #F5ED28;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #f5e1a4, #4859A9);
+  color: #333;
+}
+
+#resources a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #4859A9, #f5ed28);
+  color: #333;
+}
+
+
 
 
 
