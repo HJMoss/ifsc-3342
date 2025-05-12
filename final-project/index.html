@@ -14,33 +14,20 @@
     <meta property="og:url" content="" />
     <meta property="og:image" content="" />
 
-    <link rel="icon" href="/favicon.ico" sizes="any" />
-    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="icon.png" />
+    <link rel="icon" href="img/Grant_Co_Logo-01-removebg-preview.png" sizes="any" />
+    <link rel="icon" href="img/Grant_Co_Logo-01-removebg-preview.png" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="img/Grant_Co_Logo-01-removebg-preview.png" />
 
     <link rel="manifest" href="site.webmanifest" />
     <meta name="theme-color" content="#fafafa" />
-    <script>
-      let d = new Date();
-      alert("Today's date is " + d);
-    </script>
-    <script>
-      function myMap() {
-        var mapProp = {
-          center: new google.maps.LatLng(51.508742, -0.12085),
-          zoom: 5,
-        };
-        var map = new google.maps.Map(
-          document.getElementById("googleMap"),
-          mapProp
-        );
-      }
-    </script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
   </head>
-  <script></script>
+
   <body>
+
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0"></script>
+
     <nav>
       <a href="#" class="logo">
         <img
@@ -74,8 +61,20 @@
 
     <section id="facehour">
       <section id="facebook">
-        <h1>Facebook API call placeholder</h1>
-      </section>
+<div class="fb-page" 
+     data-href="https://www.facebook.com/grantcountylibrary/" 
+     data-tabs="timeline" 
+     data-width="" 
+     data-height="450" 
+     data-small-header="true" 
+     data-adapt-container-width="fa" 
+     data-hide-cover="false" 
+     data-show-facepile="true">
+  <blockquote cite="https://www.facebook.com/grantcountylibrary/" class="fb-xfbml-parse-ignore">
+    <a href="https://www.facebook.com/grantcountylibrary/">Grant County Library</a>
+  </blockquote>
+</div>
+</section>
       <section id="hours">
         <h2>Hours of Operation</h2>
         <ul>
@@ -228,7 +227,12 @@
           >
         </p>
       </section>
-      <section id="googleMap">Google Maps API Call Placeholder</section>
+      <section id="googlemap">
+          <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d692.8205479216045!2d-92.40229458828655!3d34.3090101016975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x862d576006aaa567%3A0xd9596e6c1c8d35ec!2sGrant%20County%20Library!5e0!3m2!1sen!2sus!4v1747012704830!5m2!1sen!2sus" 
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      </section>
     </section>
 
     <section id="resources">
